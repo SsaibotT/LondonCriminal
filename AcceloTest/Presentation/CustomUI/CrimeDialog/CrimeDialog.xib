@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CrimeDialog" customModule="AcceloTest" customModuleProvider="target">
+            <connections>
+                <outlet property="closeButton" destination="N8y-Ka-lxZ" id="pfj-Ul-swA"/>
+                <outlet property="contentView" destination="iN0-l3-epB" id="IyB-TP-gR5"/>
+                <outlet property="crimeCategoryLabel" destination="lI6-Nf-dQ4" id="zAg-lT-Co6"/>
+                <outlet property="crimeLocationLabel" destination="WzU-FX-dpX" id="7Z4-DL-vP4"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="367" height="184"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N8y-Ka-lxZ">
+                    <rect key="frame" x="12" y="13" width="25" height="22.5"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="25" id="RbF-O8-NXH"/>
+                        <constraint firstAttribute="height" constant="25" id="i7J-3m-cgL"/>
+                    </constraints>
+                    <state key="normal" backgroundImage="clear" catalog="system"/>
+                </button>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="TnS-Eb-Gs4">
+                    <rect key="frame" x="30" y="84" width="307" height="70"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="aCD-GJ-qbN">
+                            <rect key="frame" x="0.0" y="0.0" width="307" height="42"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Crime category:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nGx-Qv-CVv">
+                                    <rect key="frame" x="0.0" y="0.0" width="122" height="42"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="122" id="BjV-Rd-CbQ"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lI6-Nf-dQ4">
+                                    <rect key="frame" x="130" y="0.0" width="177" height="42"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                        </stackView>
+                        <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="Ul6-G3-uDF">
+                            <rect key="frame" x="0.0" y="52" width="307" height="18"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Crime location:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4ws-L4-dyl">
+                                    <rect key="frame" x="0.0" y="0.0" width="122" height="18"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="122" id="7Qh-kC-XOT"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WzU-FX-dpX">
+                                    <rect key="frame" x="130" y="0.0" width="177" height="18"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                        </stackView>
+                    </subviews>
+                </stackView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="TnS-Eb-Gs4" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="40" id="17y-FV-zKf"/>
+                <constraint firstItem="N8y-Ka-lxZ" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="12" id="GPd-xQ-nt6"/>
+                <constraint firstItem="TnS-Eb-Gs4" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="30" id="IE7-Su-Yj5"/>
+                <constraint firstItem="N8y-Ka-lxZ" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="12" id="SpV-fj-zjx"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="TnS-Eb-Gs4" secondAttribute="trailing" constant="30" id="hCu-XP-b6i"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="TnS-Eb-Gs4" secondAttribute="bottom" constant="30" id="uGA-TU-PHE"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="74.637681159420296" y="360.26785714285711"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="clear" catalog="system" width="128" height="114"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

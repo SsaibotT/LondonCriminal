@@ -1,0 +1,613 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0ED6BAB594D4F98912148EDF /* Pods_AcceloTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 20A91E5F8BF2C270488729A6 /* Pods_AcceloTest.framework */; };
+		8F14A39A24E91B68000A14CD /* Alertable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F14A39924E91B68000A14CD /* Alertable.swift */; };
+		8FD13CB124EA9248008FC25C /* MoyaCrimesServiceConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FD13CB024EA9248008FC25C /* MoyaCrimesServiceConstants.swift */; };
+		8FDA00E724E675C6005427D9 /* AppDelegateConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FDA00E624E675C6005427D9 /* AppDelegateConstants.swift */; };
+		8FDA00E924E6761C005427D9 /* MainMapViewControllerConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FDA00E824E6761C005427D9 /* MainMapViewControllerConstants.swift */; };
+		8FDA00EC24E6776C005427D9 /* MainMapViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FDA00EB24E6776C005427D9 /* MainMapViewModel.swift */; };
+		8FDA00F124E67A5D005427D9 /* MoyaCrimesService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FDA00F024E67A5D005427D9 /* MoyaCrimesService.swift */; };
+		8FDA00F424E68BD6005427D9 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FDA00F324E68BD6005427D9 /* DataService.swift */; };
+		8FDA00F624E69510005427D9 /* Crime.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FDA00F524E69510005427D9 /* Crime.swift */; };
+		8FDA00FA24E6BD5A005427D9 /* SearchedLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FDA00F924E6BD5A005427D9 /* SearchedLocation.swift */; };
+		8FDA010424E6CF3C005427D9 /* CrimeDialog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FDA010324E6CF3C005427D9 /* CrimeDialog.swift */; };
+		8FDA010724E6CF55005427D9 /* CrimeDialog.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8FDA010624E6CF55005427D9 /* CrimeDialog.xib */; };
+		8FDA010A24E6D1D2005427D9 /* XibView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FDA010924E6D1D2005427D9 /* XibView.swift */; };
+		8FDA010D24E6D20E005427D9 /* NibLoadable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FDA010C24E6D20E005427D9 /* NibLoadable.swift */; };
+		8FDA010F24E6F8ED005427D9 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FDA010E24E6F8ED005427D9 /* Location.swift */; };
+		8FDA011124E6F90C005427D9 /* Street.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FDA011024E6F90C005427D9 /* Street.swift */; };
+		8FEA3F8A24E66C3000F6F977 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FEA3F8924E66C3000F6F977 /* AppDelegate.swift */; };
+		8FEA3F8C24E66C3000F6F977 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FEA3F8B24E66C3000F6F977 /* SceneDelegate.swift */; };
+		8FEA3F9124E66C3000F6F977 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8FEA3F8F24E66C3000F6F977 /* Main.storyboard */; };
+		8FEA3F9324E66C3100F6F977 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8FEA3F9224E66C3100F6F977 /* Assets.xcassets */; };
+		8FEA3F9624E66C3100F6F977 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8FEA3F9424E66C3100F6F977 /* LaunchScreen.storyboard */; };
+		8FEA3F9E24E66C5B00F6F977 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 8FEA3F9D24E66C5B00F6F977 /* Podfile */; };
+		8FEA3FA624E6702A00F6F977 /* MainMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FEA3FA524E6702A00F6F977 /* MainMapViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		20A91E5F8BF2C270488729A6 /* Pods_AcceloTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AcceloTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		39F8D838D963BAF3523CB0A9 /* Pods-AcceloTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AcceloTest.debug.xcconfig"; path = "Target Support Files/Pods-AcceloTest/Pods-AcceloTest.debug.xcconfig"; sourceTree = "<group>"; };
+		8F14A39924E91B68000A14CD /* Alertable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alertable.swift; sourceTree = "<group>"; };
+		8FD13CB024EA9248008FC25C /* MoyaCrimesServiceConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoyaCrimesServiceConstants.swift; sourceTree = "<group>"; };
+		8FDA00E624E675C6005427D9 /* AppDelegateConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegateConstants.swift; sourceTree = "<group>"; };
+		8FDA00E824E6761C005427D9 /* MainMapViewControllerConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMapViewControllerConstants.swift; sourceTree = "<group>"; };
+		8FDA00EB24E6776C005427D9 /* MainMapViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMapViewModel.swift; sourceTree = "<group>"; };
+		8FDA00F024E67A5D005427D9 /* MoyaCrimesService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoyaCrimesService.swift; sourceTree = "<group>"; };
+		8FDA00F324E68BD6005427D9 /* DataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
+		8FDA00F524E69510005427D9 /* Crime.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Crime.swift; sourceTree = "<group>"; };
+		8FDA00F924E6BD5A005427D9 /* SearchedLocation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchedLocation.swift; sourceTree = "<group>"; };
+		8FDA010324E6CF3C005427D9 /* CrimeDialog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrimeDialog.swift; sourceTree = "<group>"; };
+		8FDA010624E6CF55005427D9 /* CrimeDialog.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CrimeDialog.xib; sourceTree = "<group>"; };
+		8FDA010924E6D1D2005427D9 /* XibView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XibView.swift; sourceTree = "<group>"; };
+		8FDA010C24E6D20E005427D9 /* NibLoadable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NibLoadable.swift; sourceTree = "<group>"; };
+		8FDA010E24E6F8ED005427D9 /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
+		8FDA011024E6F90C005427D9 /* Street.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Street.swift; sourceTree = "<group>"; };
+		8FEA3F8624E66C3000F6F977 /* AcceloTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AcceloTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8FEA3F8924E66C3000F6F977 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		8FEA3F8B24E66C3000F6F977 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		8FEA3F9024E66C3000F6F977 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		8FEA3F9224E66C3100F6F977 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8FEA3F9524E66C3100F6F977 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		8FEA3F9724E66C3100F6F977 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8FEA3F9D24E66C5B00F6F977 /* Podfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
+		8FEA3FA524E6702A00F6F977 /* MainMapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMapViewController.swift; sourceTree = "<group>"; };
+		AD602E25C43FDABB77FAACA0 /* Pods-AcceloTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AcceloTest.release.xcconfig"; path = "Target Support Files/Pods-AcceloTest/Pods-AcceloTest.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8FEA3F8324E66C3000F6F977 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0ED6BAB594D4F98912148EDF /* Pods_AcceloTest.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4E409669FA02707C6345EAE7 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				39F8D838D963BAF3523CB0A9 /* Pods-AcceloTest.debug.xcconfig */,
+				AD602E25C43FDABB77FAACA0 /* Pods-AcceloTest.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		74E092F00A6FC1354117249B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				20A91E5F8BF2C270488729A6 /* Pods_AcceloTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8FDA00EA24E6772F005427D9 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				8FDA00EF24E67A29005427D9 /* DataService */,
+				8FDA00EE24E67A1B005427D9 /* Entities */,
+				8FDA00ED24E67A13005427D9 /* MoyaNetworking */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		8FDA00ED24E67A13005427D9 /* MoyaNetworking */ = {
+			isa = PBXGroup;
+			children = (
+				8FDA00F024E67A5D005427D9 /* MoyaCrimesService.swift */,
+			);
+			path = MoyaNetworking;
+			sourceTree = "<group>";
+		};
+		8FDA00EE24E67A1B005427D9 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				8FDA00F524E69510005427D9 /* Crime.swift */,
+				8FDA010E24E6F8ED005427D9 /* Location.swift */,
+				8FDA011024E6F90C005427D9 /* Street.swift */,
+				8FDA00F924E6BD5A005427D9 /* SearchedLocation.swift */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		8FDA00EF24E67A29005427D9 /* DataService */ = {
+			isa = PBXGroup;
+			children = (
+				8FDA00F324E68BD6005427D9 /* DataService.swift */,
+			);
+			path = DataService;
+			sourceTree = "<group>";
+		};
+		8FDA00FB24E6C5FB005427D9 /* CustomUI */ = {
+			isa = PBXGroup;
+			children = (
+				8FDA010524E6CF40005427D9 /* CrimeDialog */,
+				8FDA010824E6D1C0005427D9 /* XibView */,
+			);
+			path = CustomUI;
+			sourceTree = "<group>";
+		};
+		8FDA010524E6CF40005427D9 /* CrimeDialog */ = {
+			isa = PBXGroup;
+			children = (
+				8FDA010324E6CF3C005427D9 /* CrimeDialog.swift */,
+				8FDA010624E6CF55005427D9 /* CrimeDialog.xib */,
+			);
+			path = CrimeDialog;
+			sourceTree = "<group>";
+		};
+		8FDA010824E6D1C0005427D9 /* XibView */ = {
+			isa = PBXGroup;
+			children = (
+				8FDA010924E6D1D2005427D9 /* XibView.swift */,
+			);
+			path = XibView;
+			sourceTree = "<group>";
+		};
+		8FDA010B24E6D200005427D9 /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				8FDA010C24E6D20E005427D9 /* NibLoadable.swift */,
+				8F14A39924E91B68000A14CD /* Alertable.swift */,
+			);
+			path = Protocol;
+			sourceTree = "<group>";
+		};
+		8FDA011224E6F959005427D9 /* MainMap */ = {
+			isa = PBXGroup;
+			children = (
+				8FEA3FA524E6702A00F6F977 /* MainMapViewController.swift */,
+				8FDA00EB24E6776C005427D9 /* MainMapViewModel.swift */,
+			);
+			path = MainMap;
+			sourceTree = "<group>";
+		};
+		8FEA3F7D24E66C3000F6F977 = {
+			isa = PBXGroup;
+			children = (
+				8FEA3F9D24E66C5B00F6F977 /* Podfile */,
+				8FEA3F8824E66C3000F6F977 /* AcceloTest */,
+				8FEA3F8724E66C3000F6F977 /* Products */,
+				4E409669FA02707C6345EAE7 /* Pods */,
+				74E092F00A6FC1354117249B /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		8FEA3F8724E66C3000F6F977 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8FEA3F8624E66C3000F6F977 /* AcceloTest.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8FEA3F8824E66C3000F6F977 /* AcceloTest */ = {
+			isa = PBXGroup;
+			children = (
+				8FEA3F9F24E66FAC00F6F977 /* AppConfiguration */,
+				8FDA00EA24E6772F005427D9 /* Networking */,
+				8FEA3FA024E66FC000F6F977 /* Presentation */,
+				8FEA3FA124E66FCC00F6F977 /* Util */,
+				8FEA3F9224E66C3100F6F977 /* Assets.xcassets */,
+				8FEA3F9424E66C3100F6F977 /* LaunchScreen.storyboard */,
+				8FEA3F9724E66C3100F6F977 /* Info.plist */,
+			);
+			path = AcceloTest;
+			sourceTree = "<group>";
+		};
+		8FEA3F9F24E66FAC00F6F977 /* AppConfiguration */ = {
+			isa = PBXGroup;
+			children = (
+				8FEA3F8924E66C3000F6F977 /* AppDelegate.swift */,
+				8FEA3F8B24E66C3000F6F977 /* SceneDelegate.swift */,
+			);
+			path = AppConfiguration;
+			sourceTree = "<group>";
+		};
+		8FEA3FA024E66FC000F6F977 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				8FEA3FA324E66FE200F6F977 /* Stories */,
+				8FEA3FA224E66FDB00F6F977 /* Storyboards */,
+				8FDA00FB24E6C5FB005427D9 /* CustomUI */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		8FEA3FA124E66FCC00F6F977 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				8FDA010B24E6D200005427D9 /* Protocol */,
+				8FEA3FA424E66FF600F6F977 /* Constants */,
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
+		8FEA3FA224E66FDB00F6F977 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				8FEA3F8F24E66C3000F6F977 /* Main.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		8FEA3FA324E66FE200F6F977 /* Stories */ = {
+			isa = PBXGroup;
+			children = (
+				8FDA011224E6F959005427D9 /* MainMap */,
+			);
+			path = Stories;
+			sourceTree = "<group>";
+		};
+		8FEA3FA424E66FF600F6F977 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				8FDA00E624E675C6005427D9 /* AppDelegateConstants.swift */,
+				8FDA00E824E6761C005427D9 /* MainMapViewControllerConstants.swift */,
+				8FD13CB024EA9248008FC25C /* MoyaCrimesServiceConstants.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8FEA3F8524E66C3000F6F977 /* AcceloTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8FEA3F9A24E66C3100F6F977 /* Build configuration list for PBXNativeTarget "AcceloTest" */;
+			buildPhases = (
+				CA5AFFABD12AA9C60ED4477E /* [CP] Check Pods Manifest.lock */,
+				8FEA3F8224E66C3000F6F977 /* Sources */,
+				8FEA3F8324E66C3000F6F977 /* Frameworks */,
+				8FEA3F8424E66C3000F6F977 /* Resources */,
+				599FCC18875A9F70E84210BE /* [CP] Embed Pods Frameworks */,
+				63062246D0B30CB16CD8D657 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AcceloTest;
+			productName = AcceloTest;
+			productReference = 8FEA3F8624E66C3000F6F977 /* AcceloTest.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8FEA3F7E24E66C3000F6F977 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1160;
+				LastUpgradeCheck = 1160;
+				ORGANIZATIONNAME = "Serhii Semenov";
+				TargetAttributes = {
+					8FEA3F8524E66C3000F6F977 = {
+						CreatedOnToolsVersion = 11.6;
+					};
+				};
+			};
+			buildConfigurationList = 8FEA3F8124E66C3000F6F977 /* Build configuration list for PBXProject "AcceloTest" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8FEA3F7D24E66C3000F6F977;
+			productRefGroup = 8FEA3F8724E66C3000F6F977 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8FEA3F8524E66C3000F6F977 /* AcceloTest */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8FEA3F8424E66C3000F6F977 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8FEA3F9624E66C3100F6F977 /* LaunchScreen.storyboard in Resources */,
+				8FEA3F9324E66C3100F6F977 /* Assets.xcassets in Resources */,
+				8FEA3F9E24E66C5B00F6F977 /* Podfile in Resources */,
+				8FDA010724E6CF55005427D9 /* CrimeDialog.xib in Resources */,
+				8FEA3F9124E66C3000F6F977 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		599FCC18875A9F70E84210BE /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AcceloTest/Pods-AcceloTest-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AcceloTest/Pods-AcceloTest-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AcceloTest/Pods-AcceloTest-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		63062246D0B30CB16CD8D657 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AcceloTest/Pods-AcceloTest-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AcceloTest/Pods-AcceloTest-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AcceloTest/Pods-AcceloTest-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CA5AFFABD12AA9C60ED4477E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AcceloTest-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8FEA3F8224E66C3000F6F977 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8FEA3FA624E6702A00F6F977 /* MainMapViewController.swift in Sources */,
+				8FDA00F624E69510005427D9 /* Crime.swift in Sources */,
+				8FEA3F8A24E66C3000F6F977 /* AppDelegate.swift in Sources */,
+				8FDA00FA24E6BD5A005427D9 /* SearchedLocation.swift in Sources */,
+				8FDA00EC24E6776C005427D9 /* MainMapViewModel.swift in Sources */,
+				8FD13CB124EA9248008FC25C /* MoyaCrimesServiceConstants.swift in Sources */,
+				8FDA00F424E68BD6005427D9 /* DataService.swift in Sources */,
+				8F14A39A24E91B68000A14CD /* Alertable.swift in Sources */,
+				8FDA010F24E6F8ED005427D9 /* Location.swift in Sources */,
+				8FDA00E724E675C6005427D9 /* AppDelegateConstants.swift in Sources */,
+				8FDA010424E6CF3C005427D9 /* CrimeDialog.swift in Sources */,
+				8FDA010D24E6D20E005427D9 /* NibLoadable.swift in Sources */,
+				8FDA010A24E6D1D2005427D9 /* XibView.swift in Sources */,
+				8FDA00F124E67A5D005427D9 /* MoyaCrimesService.swift in Sources */,
+				8FEA3F8C24E66C3000F6F977 /* SceneDelegate.swift in Sources */,
+				8FDA011124E6F90C005427D9 /* Street.swift in Sources */,
+				8FDA00E924E6761C005427D9 /* MainMapViewControllerConstants.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		8FEA3F8F24E66C3000F6F977 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8FEA3F9024E66C3000F6F977 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		8FEA3F9424E66C3100F6F977 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8FEA3F9524E66C3100F6F977 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8FEA3F9824E66C3100F6F977 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		8FEA3F9924E66C3100F6F977 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8FEA3F9B24E66C3100F6F977 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 39F8D838D963BAF3523CB0A9 /* Pods-AcceloTest.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = AcceloTest/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = testAccelo.AcceloTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		8FEA3F9C24E66C3100F6F977 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AD602E25C43FDABB77FAACA0 /* Pods-AcceloTest.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = AcceloTest/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = testAccelo.AcceloTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8FEA3F8124E66C3000F6F977 /* Build configuration list for PBXProject "AcceloTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8FEA3F9824E66C3100F6F977 /* Debug */,
+				8FEA3F9924E66C3100F6F977 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8FEA3F9A24E66C3100F6F977 /* Build configuration list for PBXNativeTarget "AcceloTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8FEA3F9B24E66C3100F6F977 /* Debug */,
+				8FEA3F9C24E66C3100F6F977 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8FEA3F7E24E66C3000F6F977 /* Project object */;
+}
