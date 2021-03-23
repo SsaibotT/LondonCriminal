@@ -10,5 +10,5 @@ import Foundation
 
 struct AppDelegateConstants {
     
-    static let ApiKey = "AIzaSyB_BlXLD4NTUY-4OF0CZEVmWHqrGvP2mp0"
+    static let ApiKey = "Your google maps key"
 }
