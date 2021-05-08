@@ -20,24 +20,21 @@ final class DataService {
     private let disposeBag = DisposeBag()
     
     func loadCrimesAtLocation(moyaProvider: MoyaProvider<MoyaCrimesService>,
-                              searchedLocation: SearchedLocation,
-                              completion: @escaping ((Crimes?, Error?) -> Void)) {
+                              searchedLocation: SearchedLocation) -> Observable<Crimes> {
         
-        moyaProvider.request(.getCrimesAtLocation(searchedLocation)) { result in
-            
-            switch result {
-            case let .success(response):
-                do {
-                    let crimes = try response.map(Crimes.self)
-                    completion(crimes, nil)
-                } catch {
-                    print("\(error)")
+        return Observable<Crimes>.create { [unowned self] observer in
+
+            moyaProvider.rx.request(.getCrimesAtLocation(searchedLocation))
+                .map(Crimes.self)
+                .subscribe { crimes in
+                    observer.onNext(crimes)
+                    observer.onCompleted()
+                } onError: { error in
+                    observer.onError(error)
                 }
-                break
-            case let .failure(error):
-                completion(nil, error)
-                break
-            }
+                .disposed(by: self.disposeBag)
+
+            return Disposables.create()
         }
     }
 }

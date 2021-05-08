@@ -25,32 +25,14 @@ struct MainMapViewModel {
     // MARK: - Internal
     func getCrimesAt(searchedLocation: SearchedLocation) {
 
-        DataService.shared
-            .loadCrimesAtLocation(moyaProvider: provider, searchedLocation: searchedLocation) { crimes, error in
-                
-                let task = DispatchWorkItem {
-                    if let error = error {
-                        self.alertWithMessage.accept(error.localizedDescription)
-                    } else if let crimes = crimes {
-                        self.crimes.accept(self.appendFiveElements(crimes: crimes))
-                    }
-                }
-                
-                DispatchQueue.main.asyncAfter(deadline: .now() + 1, execute: task)
-        }
-    }
-    
-    // MARK: - Functions
-    private func appendFiveElements(crimes: Crimes) -> Crimes {
-        
-        var tmpCrimes = Crimes()
-
-        for (index, crime) in crimes.enumerated() {
-
-            tmpCrimes.append(crime)
-            if index == 4 { break }
-        }
-
-        return tmpCrimes
+        DataService.shared.loadCrimesAtLocation(moyaProvider: provider, searchedLocation: searchedLocation)
+            .delay(.seconds(1), scheduler: MainScheduler.instance)
+            .catchError{ error -> Observable<[Crime]> in
+                self.alertWithMessage.accept(error.localizedDescription)
+                return Observable.empty()
+            }
+            .map { Array($0.prefix(5)) }
+            .bind(to: crimes)
+            .disposed(by: disposeBag)
     }
 }
